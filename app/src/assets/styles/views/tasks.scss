@@ -1,0 +1,121 @@
+.app-box_task {
+	padding:10px 0px;
+	margin: 0px 20px;
+	border-bottom:1px solid #eee;
+}
+
+.app-box_task:last-of-type {
+	border-bottom:none;
+}
+
+.app-box_task-dates {
+	display: block;
+	span {
+		display: inline-block;
+		margin-right:5px;
+		&:hover {
+			color:#000;
+		}
+	}
+}
+
+.app-box_task-main {
+	width:100%;
+	display:flex;
+	flex-wrap: nowrap;
+}
+
+.app-box_task-content {
+	width:100%;
+	margin-right:10px;
+	font-weight:500;
+	color:$color_dark-grey!important;
+}
+
+.app-box_task-state {
+	height:20px;
+	min-width:20px;
+	max-width:20px;
+	overflow:hidden;
+	margin-right:10px;
+	text-align: center;
+	font-size:18px;
+	color:$color_accent_bluesky;
+	margin-top: -2px;
+}
+
+.app-box_task-small {
+	margin-top:8px;
+	font-size:11px;
+	color:#888888;
+}
+
+.app-box_task-tags {
+	display: block;
+	span {
+		display: inline-block;
+		margin-right:5px;
+		&:hover {
+			color:#000;
+		}
+	}
+}
+
+.app-box {
+	input, 
+	textarea {
+		width:100%;
+		border:none;
+		outline:none!important;
+		padding:0 2px;
+		font-weight:500;
+		color:$color_dark-grey;
+		&::placeholder {
+			color:#aaaaaa;
+		}
+	}
+	.ti-input {
+		border:none!important;
+		padding:0!important;
+	}
+	.vue-tags-input {
+		width:100%;
+		max-width:100%!important;
+		margin-top: 7px;
+	}
+	.ti-new-tag-input-wrapper {
+		input {
+			padding:0 2px 5px 2px!important;
+		}
+		margin:0!important;
+		padding:0 0 0!important;
+		font-size: inherit!important;
+	}
+	.ti-tag {
+		background-color: $color_accent_bluesky!important;
+		margin:0px 5px 5px 0px!important;
+	}
+
+	.vdatetime-input {
+		max-width:130px;
+	}
+
+	.vdatetime-popup__header,
+	.vdatetime-calendar__month__day--selected > span > span,
+	.vdatetime-calendar__month__day--selected:hover > span > span {
+	  background: $color_accent_bluesky;
+	}
+
+	.vdatetime-year-picker__item--selected,
+	.vdatetime-time-picker__item--selected,
+	.vdatetime-popup__actions__button {
+	  color: $color_accent_bluesky;
+	}
+} 
+
+
+
+
+
+
+

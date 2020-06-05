@@ -1,0 +1,45 @@
+
+$navigation_background: $color_white;
+$navigation_divider: $color_light-grey;
+$navigation_height: 60px;
+
+.navbar-container {
+	position: fixed;
+    width: 100%;
+    z-index: 100;
+	h6 {
+		margin:0;
+		padding:0;
+	}
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $navigation_background;
+	box-shadow: 0 0 20px 0 rgba(154,161,171,.15);
+	padding:1rem;
+	height:$navigation_height;
+	.navbar-start, 
+	.navbar-end {
+		display:flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.navbar-toggle {
+		@media (min-width:992px) {
+			display:none;
+		}
+		padding-right:1rem;
+		.navbar-toggle_icon-bar {
+			height:5px;
+			width:30px;
+			background-color:$color_light-grey;
+			margin:5px 0;
+		}
+	}
+	.navbar-content_add {
+		svg {
+			width:30px;
+			height:100%;
+		}
+	}
+}
